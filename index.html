@@ -3,28 +3,45 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="icon" href="favicon.ico">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 		<title>Why Barcelona</title>
+		<meta name="description" content="Reasons to visit or live in Barcelona">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://why.barcelona">
+		<meta property="og:title" content="Why Barcelona">
+		<meta property="og:description" content="Reasons to visit or live in Barcelona">
+		<meta property="og:image" content="https://why.barcelona/images/barcelona.jpg">
+
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@layered/layered-design@1.5.6/dist/layered.css" integrity="sha256-NT1Sf9WGtlz9UD0mXpHB58GH3SpmFj9UEg99lTRW4YE=" crossorigin="anonymous">
 
 		<style type="text/css">
 		.reason {
 			border-radius: 1rem;
 			background-size: cover;
-			aspect-ratio: 16 / 9;
+			background-position: center center;
+			aspect-ratio: 3 / 2;
 			padding: 2rem;
 			text-align: center;
 		}
+		.reason.a16x9 {
+			aspect-ratio: 16 / 9;
+		}
 		.reason h3 {
 			color: #333;
-			text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+			text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
 			margin: 0 !important;
 			font-size: 2rem;
 		}
 		.reason.dark h3 {
 			color: #f0f0f0;
-			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+		}
+		.reason p {
+			color: #444;
+			font-size: 1.4rem;
 		}
 		.reason a {
 			color: #fff;
@@ -39,30 +56,33 @@
 
 			<div class="text-center py-6">
 				<h1>Why Barcelona</h1>
-				<h2>Reasons to visit or live in Barcelona</h2>
+				<h3>Reasons to visit or live in Barcelona</h3>
 			</div>
 
-			<div class="row">
+			<div class="row mb-6">
 				<div class="col-lg-6 my-3">
-					<div class="reason d-flex justify-content-center align-items-center" style="background-image: url(images/architecture.jpg)">
-						<h3>Spanish architecture</h3>
+					<div class="reason d-flex justify-content-center" style="background-image: url(images/architecture.jpg)">
+						<h3>For the spanish architecture</h3>
 					</div>
 				</div>
 				<div class="col-lg-6 my-3">
-					<div class="reason d-flex justify-content-center align-items-center" style="background-image: url(images/skate.jpg)">
-						<h3>You can skate everywhere</h3>
+					<div class="reason d-flex justify-content-center" style="background-image: url(images/beach.jpg)">
+						<h3>Can go on the beach at least 300 days of the year</h3>
 					</div>
 				</div>
 				<div class="col-12 my-3">
-					<div class="reason d-flex justify-content-center align-items-center" style="background-image: url(images/gaudi.jpg)">
-						<h3>Designed by Gaudi</h3>
-					</div>
+					<a href="https://www.barcelona.com/barcelona_city_guide/gaudi_barcelona" target="_blank" class="reason a16x9 d-flex justify-content-center align-items-center" style="background-image: url(images/gaudi.jpg)">
+						<div>
+							<h3>Designed by Gaudi</h3>
+							<p>Visit Sagrada Familia, Casa Milà, Park Güell ❐</p>
+						</div>
+					</a>
 				</div>
 				<div class="col-lg-6 my-3">
 					<div class="reason dark d-flex justify-content-center align-items-center" style="background-image: url(images/foods.jpg)">
 						<div>
 							<h3>Has restaurants like</h3>
-							<p class="lead">
+							<p>
 								<a href="https://copaseticbarcelona.com/" target="_blank">Copasetic</a>,
 								<a href="https://www.instagram.com/fismuler/" target="_blank">Fismuler</a>,
 								<a href="https://kokukitchen.es/" target="_blank">Koku Kitchen</a>
@@ -71,9 +91,66 @@
 					</div>
 				</div>
 				<div class="col-lg-6 my-3">
-					<div class="reason d-flex justify-content-center align-items-center" style="background-image: url(images/beach.jpg)">
-						<h3>Can go on the beach 300 days of the year</h3>
+					<div class="reason dark d-flex justify-content-center" style="background-image: url(images/cycling.jpg)">
+						<h3>It's the starting poing of many scenic cycling routes</h3>
 					</div>
+				</div>
+				<div class="col-12 my-3">
+					<div class="reason a16x9 d-flex justify-content-center align-items-center" style="background-image: url(images/work.jpg)">
+						<div>
+							<h3>Many popular companies are located in Barcelona:</h3>
+							<p>
+								<a href="https://n26.com/" target="_blank">N26</a>,
+								<a href="https://glovoapp.com/" target="_blank">Glovo</a>,
+								<a href="https://www.skyscanner.es/" target="_blank">SkyScanner</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 my-3">
+					<div class="reason d-flex justify-content-center align-items-center" style="background-image: url(images/skate.jpg)">
+						<h3>You can skate anywhere</h3>
+					</div>
+				</div>
+				<div class="col-lg-6 my-3">
+					<div class="reason d-flex justify-content-center align-items-center" style="background-image: url(images/coffee.jpg)">
+						<div>
+							<h3>And have the best coffee at:</h3>
+							<p>
+								<a href="https://nomadcoffee.es/" target="_blank">NOMAD</a>,
+								<a href="https://morrowcoffee.com/" target="_blank">Morrow Coffee</a>,
+								<a href="https://hiddencafebcn.com/" target="_blank">Hidden Coffee</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 my-3">
+					<div class="reason dark d-flex justify-content-center align-items-center" style="background-image: url(images/snowboarding.jpg)">
+						<h3>Ski and snowboarding slopes are only 1h away</h3>
+					</div>
+				</div>
+			</div>
+
+			<p class="text-center">Made by</p>
+
+			<div class="row justify-content-center text-center">
+				<div class="col-3 col-lg-2">
+					<a href="https://laye.red" target="_blank">
+						<img src="images/logo-layered.jpg" class="rounded-circle mb-2" width="100" />
+						<p>Layered</p>
+					</a>
+				</div>
+				<div class="col-3 col-lg-2">
+					<a href="https://yogatella.com" target="_blank">
+						<img src="images/yogatella.jpg" class="rounded-circle mb-2" width="100" />
+						<p>Yogatella</p>
+					</a>
+				</div>
+				<div class="col-3 col-lg-2">
+					<a href="https://andrei.net" target="_blank">
+						<img src="images/andrew.jpg" class="rounded-circle mb-2" width="100" />
+						<p>Andrei</p>
+					</a>
 				</div>
 			</div>
 
